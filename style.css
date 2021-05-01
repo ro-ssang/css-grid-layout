@@ -1,13 +1,12 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 500px 1fr 2fr;
+  grid-template-columns: repeat(5, 1fr 2fr);
   grid-template-rows: 150px 150px 150px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
 .wrapper > div {
-  padding: 2rem;
   background: #f6e58d;
   border: 1px solid #f9ca24;
   border-radius: 4px;
