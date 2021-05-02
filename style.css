@@ -1,7 +1,7 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -13,4 +13,12 @@
   border-radius: 4px;
   box-sizing: border-box;
   color: #f03935;
+}
+
+.box1 {
+  align-self: stretch;
+}
+
+.box2 {
+  align-self: flex-start;
 }
