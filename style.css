@@ -1,13 +1,12 @@
 .wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 500px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
 .wrapper > div {
-  flex: 1 1 150px;
   padding: 10px;
   background: #f6e58d;
   border: 1px solid #f9ca24;
