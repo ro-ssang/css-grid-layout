@@ -1,12 +1,12 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 100px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
 .wrapper > div {
+  padding: 10px;
   background: #f6e58d;
   border: 1px solid #f9ca24;
   border-radius: 4px;
@@ -15,12 +15,21 @@
 
 .box1 {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: -1;
   grid-row-start: 1;
   grid-row-end: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .box2 {
   grid-row-start: 3;
   grid-row-end: 5;
+}
+
+.sub-box {
+  padding: 10px;
+  background: #f5edc3;
+  border: 1px solid #e0bd3d;
+  border-radius: 4px;
 }
