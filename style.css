@@ -3,7 +3,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 200px;
   gap: 20px;
-  position: relative;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -22,7 +21,16 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
+  position: relative;
+}
+
+.abspos {
   position: absolute;
   left: 40px;
   top: 40px;
+  padding: 10px;
+  background: #e6de73;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #000;
 }
