@@ -1,6 +1,9 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  position: relative;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -12,4 +15,14 @@
   border-radius: 4px;
   box-sizing: border-box;
   color: #f03935;
+}
+
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: absolute;
+  left: 40px;
+  top: 40px;
 }
