@@ -7,6 +7,11 @@
   border-radius: 4px;
 }
 
+.media.flipped {
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "content img";
+}
+
 .media .image {
   grid-area: img;
   background: #ffd8a8;
