@@ -8,6 +8,7 @@
     "c d d";
   gap: 10px;
   align-content: space-between;
+  justify-content: space-around;
   width: 500px;
   height: 500px;
   border: 2px solid #f03935;
