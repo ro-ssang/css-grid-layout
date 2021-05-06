@@ -1,16 +1,39 @@
-dl {
+.wrapper {
   display: grid;
-  grid-template-columns: auto 1fr;
-  max-width: 300px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+  gap: 10px;
+  align-items: start;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
-dt {
-  grid-column: 1;
-  font-weight: bold;
+.wrapper > div {
+  padding: 10px;
+  background: #f6e58d;
+  border: 1px solid #f9ca24;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #f03935;
 }
 
-dd {
-  grid-column: 2;
+.item1 {
+  grid-area: a;
+}
+
+.item2 {
+  grid-area: b;
+}
+
+.item3 {
+  grid-area: c;
+}
+
+.item4 {
+  grid-area: d;
 }
