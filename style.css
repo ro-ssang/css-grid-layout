@@ -8,7 +8,6 @@
     "c c c c d d d d"
     "c c c c d d d d";
   gap: 10px;
-  align-items: start;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -28,12 +27,15 @@
 
 .item2 {
   grid-area: b;
+  align-self: start;
 }
 
 .item3 {
   grid-area: c;
+  align-self: end;
 }
 
 .item4 {
   grid-area: d;
+  align-self: center;
 }
