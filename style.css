@@ -1,11 +1,15 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(6, [col1-start] 1fr [col2-start] 3fr);
+  gap: 10px;
+  grid-template-columns: repeat(12, [col-start] 1fr);
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
-.wrapper > div {
+header,
+aside,
+article,
+footer {
   padding: 10px;
   background: #f6e58d;
   border: 1px solid #f9ca24;
@@ -14,11 +18,22 @@
   color: #f03935;
 }
 
-.item1 {
-  grid-column: col1-start / col2-start 2;
+.main-header,
+.main-footer {
+  grid-column: col-start / span 12;
 }
 
-.item2 {
-  grid-column: col1-start 2 / span 2 col1-start;
+.side1 {
+  grid-column: col-start / span 3;
+  grid-row: 2;
+}
+
+.content {
+  grid-column: col-start 4 / span 6;
+  grid-row: 2;
+}
+
+.side2 {
+  grid-column: col-start 10 / span 3;
   grid-row: 2;
 }
