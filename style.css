@@ -27,15 +27,15 @@
 
 .item2 {
   grid-area: b;
-  align-self: start;
+  justify-self: start;
 }
 
 .item3 {
   grid-area: c;
-  align-self: end;
+  justify-self: end;
 }
 
 .item4 {
   grid-area: d;
-  align-self: center;
+  justify-self: center;
 }
