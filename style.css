@@ -1,11 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-areas:
-    "hd hd hd hd   hd   hd   hd   hd   hd"
-    "sd sd sd main main main main main main"
-    "ft ft ft ft   ft   ft   ft   ft   ft";
+  grid-template-columns: repeat(12, [col-start] 1fr);
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -19,26 +14,10 @@
   color: #f03935;
 }
 
-.header {
-  grid-area: hd;
+.item1 {
+  grid-column: col-start / col-start 5;
 }
 
-.footer {
-  grid-area: ft;
-}
-
-.content {
-  grid-area: main;
-}
-
-.sidebar {
-  grid-area: sd;
-}
-
-.wrapper .overlay {
-  grid-column-start: main-start / main-end;
-  grid-row-start: hd-start / ft-end;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 10;
+.item2 {
+  grid-column: col-start 7 / span 3;
 }
