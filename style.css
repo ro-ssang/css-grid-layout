@@ -1,39 +1,16 @@
 .wrapper {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  grid-template-columns: repeat(12, [col-start] 1fr);
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
-header,
-aside,
-article,
-footer {
+.wrapper > div {
   padding: 10px;
   background: #f6e58d;
   border: 1px solid #f9ca24;
   border-radius: 4px;
   box-sizing: border-box;
   color: #f03935;
-}
-
-.main-header,
-.main-footer {
-  grid-column: col-start / span 12;
-}
-
-.side1 {
-  grid-column: col-start / span 3;
-  grid-row: 2;
-}
-
-.content {
-  grid-column: col-start 4 / span 6;
-  grid-row: 2;
-}
-
-.side2 {
-  grid-column: col-start 10 / span 3;
-  grid-row: 2;
 }
