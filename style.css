@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-columns: repeat(6, [col1-start] 1fr [col2-start] 3fr);
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -15,9 +15,10 @@
 }
 
 .item1 {
-  grid-column: col-start / col-start 5;
+  grid-column: col1-start / col2-start 2;
 }
 
 .item2 {
-  grid-column: col-start 7 / span 3;
+  grid-column: col1-start 2 / span 2 col1-start;
+  grid-row: 2;
 }
