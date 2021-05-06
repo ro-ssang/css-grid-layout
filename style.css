@@ -1,40 +1,13 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  grid-template-areas:
-    "a a b"
-    "a a b"
-    "c d d";
-  gap: 10px;
-  width: 500px;
-  height: 500px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
-.wrapper > div {
+.wrapper > p {
   padding: 10px;
   background: #f6e58d;
   border: 1px solid #f9ca24;
   border-radius: 4px;
   box-sizing: border-box;
   color: #f03935;
-}
-
-.item1 {
-  grid-area: a;
-  margin-left: auto;
-}
-
-.item2 {
-  grid-area: b;
-}
-
-.item3 {
-  grid-area: c;
-}
-
-.item4 {
-  grid-area: d;
 }
