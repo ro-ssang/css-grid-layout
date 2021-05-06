@@ -1,9 +1,14 @@
 .wrapper {
+  writing-mode: vertical-lr;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
-.wrapper > p {
+.wrapper > div {
   padding: 10px;
   background: #f6e58d;
   border: 1px solid #f9ca24;
