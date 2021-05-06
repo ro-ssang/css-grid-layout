@@ -1,22 +1,16 @@
-.wrapper {
+dl {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 200px;
-  grid-auto-flow: dense;
+  grid-template-columns: auto 1fr;
+  max-width: 300px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
 
-.wrapper > div {
-  padding: 10px;
-  background: #f6e58d;
-  border: 1px solid #f9ca24;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #f03935;
+dt {
+  grid-column: 1;
+  font-weight: bold;
 }
 
-.wrapper .landscape {
-  grid-column-end: span 2;
-  background-color: #ffa94d;
+dd {
+  grid-column: 2;
 }
