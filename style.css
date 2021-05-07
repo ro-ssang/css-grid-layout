@@ -1,9 +1,7 @@
 .wrapper {
-  direction: rtl;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 100px);
-  gap: 10px;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -17,15 +15,18 @@
   color: #f03935;
 }
 
-.item1 {
-  grid-column: 1;
+.wrapper nav {
+  writing-mode: vertical-lr;
 }
 
-.item2 {
-  grid-column: -1 / -3;
+.wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1em;
+  list-style: none;
 }
 
-.item3 {
-  grid-column: 1 / 3;
-  grid-row: 2;
+.wrapper a {
+  text-decoration: none;
 }
