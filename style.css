@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
   border: 2px solid #f03935;
   border-radius: 4px;
 }
@@ -15,18 +15,7 @@
   color: #f03935;
 }
 
-.wrapper nav {
-  writing-mode: vertical-lr;
-}
-
-.wrapper ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 1em;
-  list-style: none;
-}
-
-.wrapper a {
-  text-decoration: none;
+.box1 {
+  grid-column: 1;
+  grid-row: 2;
 }
